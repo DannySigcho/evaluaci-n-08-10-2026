@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e8f5 100%);
+    color: #333;
+}
+
+/* HEADER Y NAVEGACIÓN */
+header {
+    background: linear-gradient(90deg, #0056b3, #00a8e8);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background: #ff6b35;
+    transform: scale(1.1);
+}
+
+.logo {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #ffd166;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 36px;
+}
+
+h2 {
+    color: #ff6b35;
+    margin: 20px 0 10px;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+/* PRODUCTOS */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.producto {
+    background: #fff;
+    border: 2px solid #00a8e8;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,168,232,0.3);
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    color: #0056b3;
+    margin-bottom: 8px;
+}
+
+.producto .precio {
+    color: #ff6b35;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* FORMULARIO DE CONTACTO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 2px solid #00a8e8;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #ff6b35;
+}
+
+button {
+    background: #ff6b35;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e55a2b;
+}
+
+/* FOOTER */
+footer {
+    background: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
